@@ -1,0 +1,1 @@
+{"name":"Local: count","url":"d:\\Phitron\\Setup\\Module 10\\cp\\count.c","tests":[{"id":1714003227473,"input":"352","output":"10"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Phitron\\Setup\\Module 10\\cp\\count.c","group":"local","local":true}
