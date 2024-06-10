@@ -11,5 +11,14 @@ int main(){
     //vector<int>::iterator it;
     for(auto it = v.begin(); it < v.end(); it++)
         cout << *it << " ";
-    return 0;
+
+    cout << endl;
+    auto it = v.begin() ; // auto keyword এর সাহায্যে সহজে ইটারেটর ডিক্লেয়ার করা যায়
+
+    while(it!=v.end()){
+        cout << *it << endl; 
+        it++ ;
+    }
+
+    return 0;    
 }
