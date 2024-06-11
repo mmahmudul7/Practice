@@ -12,6 +12,6 @@ int main() {
         cout << "ARE Brothers" << endl;
     else 
         cout << "NOT" << endl;
-    
+
     return 0;
 }
