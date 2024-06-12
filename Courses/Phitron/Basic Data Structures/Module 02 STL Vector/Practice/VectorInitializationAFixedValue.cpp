@@ -6,8 +6,8 @@ int main(){
     int n;
     cin >> n;
     
-    vector<int> v;
-    v.resize(5, n);
+    vector<int> v(5, n);
+    //v.resize(5, n);
 
     for (int i = 0; i < v.size(); i++){
         cout << v[i] << " ";
