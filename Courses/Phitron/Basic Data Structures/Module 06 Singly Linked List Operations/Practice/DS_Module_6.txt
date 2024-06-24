@@ -1,0 +1,14 @@
+﻿Module-6
+Implement the following Operations for Singly Linked List
+
+
+1. Create a Singly Linked List (Take input from user)
+2. Count the Size of the list
+3. Display List
+4. Insertion at Head
+5. Insertion at Tail
+6. Insertion at Specific Position
+7. Deletion at Head
+8. Deletion at Tail
+9. Deletion at a Specific Position
+10. Define Singly Linked List
