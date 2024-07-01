@@ -14,6 +14,7 @@ public:
         this->next = NULL;
     }
 };
+
 int size(Node *head)
 {
     Node *tmp = head;
@@ -25,7 +26,8 @@ int size(Node *head)
     }
     return cnt;
 }
-void insert_head(Node *&head, Node *tail, int val)
+
+void insert_head(Node *&head, Node *&tail, int val)
 {
     Node *newNode = new Node(val);
     if (head == NULL)
@@ -36,9 +38,9 @@ void insert_head(Node *&head, Node *tail, int val)
     }
     newNode->next = head;
     head->prev = newNode;
-
     head = newNode;
 }
+
 void insert_tail(Node *&head, Node *&tail, int val)
 {
     Node *newNode = new Node(val);
@@ -51,12 +53,14 @@ void insert_tail(Node *&head, Node *&tail, int val)
     tail->next = newNode;
     newNode->prev = tail;
     tail = tail->next;
+    // tail = newNode;
 }
+
 void inset_at_position(Node *head, int pos, int val)
 { // dori input 2, 100
     Node *newNode = new Node(val);
     Node *tmp = head;
-    for (int i = 1; i < pos - 1; i++)
+    for (int i = 1; i <= pos - 1; i++)
     {
         tmp = tmp->next;
     }
@@ -66,6 +70,7 @@ void inset_at_position(Node *head, int pos, int val)
     newNode->next->prev = newNode; // 100 <- 30
     newNode->prev = tmp;           // 20 <- 100
 }
+
 void print_head_to(Node *head)
 {
     Node *tmp = head;
@@ -76,6 +81,7 @@ void print_head_to(Node *head)
     }
     cout << endl;
 }
+
 void print_tail_to(Node *tail)
 {
     Node *tmp = tail;
@@ -86,6 +92,7 @@ void print_tail_to(Node *tail)
     }
     cout << endl;
 }
+
 int main()
 { // Nodes
     // Node *head = NULL;
@@ -109,22 +116,16 @@ int main()
     cout << "Enter pos and val ";
     int pos, val;
     cin >> pos >> val;
-    if (pos == 0)
-    {
-        insert_head(head, tail, val);
-    }
-    else if (pos == size(head))
-    {
-        insert_tail(head, tail, val);
-    }
-    else if (pos > size(head))
-    {
+
+    if (pos > size(head))
         cout << "Invalid" << endl;
-    }
+    else if (pos == 0)
+        insert_head(head, tail, val);
+    else if (pos == size(head))
+        insert_tail(head, tail, val);
     else
-    {
         inset_at_position(head, pos, val);
-    }
+
     print_head_to(head);
     print_tail_to(tail);
 
