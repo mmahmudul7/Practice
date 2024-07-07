@@ -32,7 +32,7 @@ class myStack{
             tail = tail->next;
             //tail->next = NULL;
         }
-        void pop(){
+        void pop(){ // delete_at_tail
             sz--;
             Node *deleteNode = tail;
             tail = tail->prev;
