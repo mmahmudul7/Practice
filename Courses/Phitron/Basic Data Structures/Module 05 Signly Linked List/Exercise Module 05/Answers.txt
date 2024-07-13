@@ -1,0 +1,41 @@
+a. Why do you think linked-list requires more memory than an array when storing
+the same number of elements?
+
+Answer: Because linked-list stores pointers to the next (and previous, in doubly linked lists) elements
+
+
+b. Write down Three Limitations of the array which can be solved by the use of
+Linked List.
+
+Answer: Three limitations of arrays that can be solved by using linked lists are:
+
+1. Fixed Size: Arrays have a fixed size, which is determined at the time of their creation and cannot be changed later. Linked lists can dynamically grow or shrink in size, providing flexibility in memory usage.
+
+2. Slow Insertion and Deletion: In arrays, inserting or deleting an element requires shifting the subsequent elements to maintain order, which can be time-consuming. In linked lists, insertion and deletion operations involve updating pointers, making these operations faster and more efficient.
+
+3. Memory Management: Arrays require contiguous memory locations, which may not always be available, leading to memory allocation issues. Linked lists do not require contiguous memory, allowing elements to be stored in different memory locations and reducing the problem of memory fragmentation.
+
+
+c. What is the value of Head?
+Answer: Head is a pointer to the first node of the linked list.
+
+
+d. What is the value of ? marked address location?
+Answer: 3
+
+
+e. What will be the value of Head->Next->Next->Value?
+Answer: 1
+
+
+f. What will be the value of Sum following pseudocode snippets?
+
+Sum = 0;
+Temp = Head;
+While ( Temp -> Next!= 1020){
+	Sum += Temp-> value;
+	Temp = Temp -> Next;
+}
+Sum -= Temp -> value;
+
+Answer: -1 [(5 + 7 + 1 = 13) - 14 = -1]
