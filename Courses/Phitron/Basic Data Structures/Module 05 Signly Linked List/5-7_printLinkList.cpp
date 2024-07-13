@@ -41,5 +41,11 @@ int main()
     }
    // যখন tail এ যাবে অর্থাৎ এই code অনুযায়ী d তে যাবে তখন d->next এ কিন্তু NULL পাবে। তখন tmp = tmp->next = d->next = NULL পাবে। আর loop break হয়ে যাবে।
     
+	tmp = head;
+	while(tmp != NULL){
+		cout << tmp->val << endl;
+		tmp = tmp->next;
+	}
+		
     return 0;
 }
