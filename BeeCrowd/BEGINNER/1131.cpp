@@ -1,5 +1,4 @@
 #include <iostream>
-
 using namespace std;
 
 int main()
@@ -35,7 +34,7 @@ int main()
     cout << "Gremio:" << gremio << endl;
     cout << "Empates:" << empate << endl;
 
-    if (inter > gremendl)
+    if (inter > gremio)
         cout << "Inter venceu mais" << endl;
     if (inter < gremio)
         cout << "Gremio venceu mais" << endl;
