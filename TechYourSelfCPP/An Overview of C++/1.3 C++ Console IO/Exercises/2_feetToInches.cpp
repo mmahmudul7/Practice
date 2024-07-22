@@ -10,6 +10,7 @@ int main(){
         inches = feet * 12;
 
         cout << feet << " = " << inches << " inches." <<"\n";
+        
     } while (feet != 0);
     
     return 0;
