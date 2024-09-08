@@ -1,8 +1,8 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 
 int main() {
-    int n, e;
+    int n, e, q;
     cin >> n >> e;
 
     vector<vector<int>> graph(n);
@@ -10,17 +10,11 @@ int main() {
     while (e--) {
         int a, b;
         cin >> a >> b;
-        
-        if (find(graph[a].begin(), graph[a].end(), b) == graph[a].end())
-            graph[a].push_back(b);
-
-        if (find(graph[b].begin(), graph[b].end(), a) == graph[b].end())
-            graph[b].push_back(a);
+        graph[a].push_back(b);
+        graph[b].push_back(a);
     }
 
-    int q;
     cin >> q;
-
     while (q--) {
         int x;
         cin >> x;
@@ -30,9 +24,9 @@ int main() {
         else {
             sort(graph[x].begin(), graph[x].end(), greater<int>()); 
 
-            for (int node : graph[x])
-                cout << node << " ";
-
+            for (int i = 0; i < graph[x].size(); i++)
+                cout << graph[x][i] << " ";
+            
             cout << endl;
         }
     }
