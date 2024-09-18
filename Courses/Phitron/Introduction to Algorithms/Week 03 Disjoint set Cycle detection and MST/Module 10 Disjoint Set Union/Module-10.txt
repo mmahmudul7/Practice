@@ -1,0 +1,10 @@
+﻿Basic concepts of Disjoint Set Union
+
+
+Answer the following Questions:
+1. What is Disjoint Set Union (DSU)?
+2. What are the applications of DSU?
+3. How does the Find operation work?
+4. How does the Union operation work?
+5. What is Path Compression in DSU?
+6. What is Union by Rank in DSU?
