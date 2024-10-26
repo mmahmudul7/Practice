@@ -1,0 +1,6 @@
+Data vs Information
+Database and Types of Database
+Table, Record, Field, Value
+DBMS, RDBMS
+Key, Primary Key
+Relation, Foren Key
