@@ -1,0 +1,40 @@
+﻿Questions
+
+
+1. What is the difference between Data and Information
+Answer: Data comprises raw, unprocessed facts that need context to become useful, while information is data that has been processed, organized, and interpreted to add meaning and value.
+
+2. Describe Primary Key, Composite Primary Key, Foreign Key with example?
+Answer: A Primary Key is a unique identifier for each record in a table. It ensures that no two rows have the same value for that column, and it cannot contain NULL values.
+
+A Composite Primary Key is a primary key that consists of two or more columns to uniquely identify each record in a table. It's used when a single column is not enough to uniquely identify a row.
+
+A Foreign Key is a field (or collection of fields) in one table that uniquely identifies a row of another table. It creates a relationship between two tables, enforcing referential integrity by ensuring that the values in the foreign key column must match values in the referenced primary key column.
+
+3. Write five numeric type Data Types of MySQL
+Answer: INT, FLOAT, DOUBLE, NUMERIC, DECIMAL
+
+4. Create a table named Employee with EmployeeId, EmployeeName, EmployeeSalary and JoiningDate
+   1. Create table
+   2. Insert 2 employee data
+   3. Delete 1 employee data
+
+1.
+CREATE TABLE Employee(
+	EmployeeId CHAR(4) PRIMARY KEY,
+    EmployeeName VARCHAR(50),
+    EmployeeSalary CHAR(10),
+    JoiningDate DATE
+);
+
+
+2.
+INSERT INTO employee
+(EmployeeId, EmployeeName, EmployeeSalary, JoiningDate) VALUES(1, 'Mahmud', 10000.00, '2024-01-01');
+
+INSERT INTO employee
+(EmployeeId, EmployeeName, EmployeeSalary, JoiningDate) VALUES(2, 'Hasan', 12000.00, '2022-01-08');
+
+3.
+DELETE FROM employee
+WHERE EmployeeId = 2;
