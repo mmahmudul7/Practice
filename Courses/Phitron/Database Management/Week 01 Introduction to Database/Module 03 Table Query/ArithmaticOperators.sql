@@ -22,5 +22,7 @@ SELECT CSE + ME, CSE - ME, (CSE + ME) / 2, CSE % 10
 FROM Marks;
 -- WHERE Roll = '103';
 
+SELECT 10 + 5;
+
 -- See all Data
 SELECT * FROM Marks;
