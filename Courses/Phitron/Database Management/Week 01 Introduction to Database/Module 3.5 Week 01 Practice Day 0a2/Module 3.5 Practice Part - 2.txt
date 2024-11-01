@@ -1,0 +1,48 @@
+﻿Questions
+1. Make an Employee Table where the fields are
+   1. EmpId
+   2. EmpName
+   3. Joining Year
+   4. Birthday (not after 2000)
+   5. Designation
+   6. Salary
+Make this table with proper constraints
+
+Answer:
+CREATE TABLE Employee_2 (
+    EmpId CHAR(4) PRIMARY KEY,
+    EmpName VARCHAR(50) NOT NULL,
+    JoiningYear CHAR(4),
+    Birthday YEAR CHECK(Birthday <= '2000-12-31'),
+    Designation VARCHAR(15),
+    Salary DECIMAL(10, 2) CHECK (Salary > 0)
+);
+
+
+2. How to make composite primary key constraint? Show with example.
+
+Answer:
+To create a composite primary key constraint, specify multiple columns in the PRIMARY KEY clause within the CREATE TABLE statement. List the columns inside parentheses after PRIMARY KEY, which makes them jointly unique, thus ensuring that no two rows have the same combination of values across these columns.
+
+CREATE TABLE Enrollments (
+    StudentID INT,
+    CourseID INT,
+    EnrollmentDate DATE,
+    PRIMARY KEY (StudentID, CourseID)
+);
+
+
+3. Can LIMIT + OFFSET features can be done using only LIMIT Syntax? How?
+
+Answer:
+Yes, LIMIT + OFFSET feature can be done using only LIMIT Syntax.
+
+SELECT column1, column2 
+FROM table_name 
+LIMIT offset_value, row_count;
+
+Example:
+SELECT *
+FROM Students 
+LIMIT 3, 5;
+
