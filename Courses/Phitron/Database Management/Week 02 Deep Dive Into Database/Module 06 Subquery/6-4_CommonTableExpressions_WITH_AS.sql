@@ -1,0 +1,9 @@
+WITH TEMP AS (
+-- CTE Query
+SELECT *
+FROM EMPLOYEES
+LIMIT 5
+)
+-- Main Query
+SELECT *
+FROM TEMP;
