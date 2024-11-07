@@ -1,0 +1,8 @@
+﻿Before ans the questions, please setup the dummydb which I provided on previous module
+
+
+Questions
+1. Determine the third highest salary and which employee receives it?
+2. Determine the third lowest salary and which employee receives it?
+3. Which employee has been hired after Steven?
+4. With common table expression solve the question 1 and 2
