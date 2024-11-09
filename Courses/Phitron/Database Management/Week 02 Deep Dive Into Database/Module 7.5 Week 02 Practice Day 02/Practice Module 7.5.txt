@@ -1,0 +1,5 @@
+﻿Questions
+1. Show the employee names and corresponding job_titles without using JOIN query
+2. Do the question no 1 using JOIN query
+3. Show the name of the employee and the job_title who receives the maximum salary
+4. Show the list of employee name and corresponding manager names.
