@@ -3,3 +3,5 @@ age = input("Enter your age: ")
 
 print()
 print("Hello", user_name, "Your age is:", age)
+
+# input() always string a input ney
