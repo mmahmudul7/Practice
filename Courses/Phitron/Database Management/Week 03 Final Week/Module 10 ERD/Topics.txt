@@ -1,0 +1,6 @@
+Database Design Straegies
+ERD Notations
+ERD Primary Key and Relation Between Tables
+ERD Strong Entity Weak Entity
+ERD Types of Attributes
+ERD Generalization Specialization
