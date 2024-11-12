@@ -1,0 +1,9 @@
+SELECT * FROM EMPLOYEES;
+
+SELECT FIRST_NAME, LAST_NAME
+FROM EMPLOYEES
+WHERE SALARY < (
+				SELECT SALARY
+                FROM EMPLOYEES
+                WHERE FIRST_NAME = 'Steven' AND LAST_NAME = 'King'
+                );
