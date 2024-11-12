@@ -1,0 +1,1 @@
+Primary Key is a unique column of a table for each record while Foreign Key is a column which is made relation with another table's Primary Key.
