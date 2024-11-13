@@ -1,0 +1,7 @@
+﻿Questions
+1. Create three tables named Student, Course, Enroll
+   1. In Enroll Table use foreign key of Student table and Course table
+   2. Use ON DELETE CASCADE for Student
+   3. Use ON DELETE SET NULL for Course
+2. Write differences between UNION and UNION ALL
+3. Design an ERD for Student, Course, Enroll, Teacher
