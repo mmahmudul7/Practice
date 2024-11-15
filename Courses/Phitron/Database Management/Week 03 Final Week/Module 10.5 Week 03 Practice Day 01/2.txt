@@ -1,0 +1,5 @@
+The primary difference between UNION and UNION ALL lies in how they handle duplicate rows.
+UNION eliminates duplicate rows from the result set, ensuring that only unique records are returned.
+On the other hand, UNION ALL includes all rows from the combined queries, including duplicates.
+
+As a result, UNION requires additional processing time to filter duplicates, making it slower compared to UNION ALL, which directly merges the results without any filtering. UNION is typically used when unique records are needed, while UNION ALL is preferred when complete data, including duplicates, is required for analysis or reporting.
