@@ -1,0 +1,16 @@
+Entity attributes in a database or an Entity-Relationship Diagram (ERD) are classified into the following types based on their nature and role:
+
+1. Simple Attribute: Attributes that cannot be further divided into smaller components.
+
+2. Composite Attribute: Attributes that can be divided into smaller sub-parts, which have their own meanings.
+
+3. Single-Valued Attribute: Attributes that hold only a single value for a specific entity.
+
+4. Multi-Valued Attribute: Attributes that can hold multiple values for a specific entity.
+
+5. Derived Attribute: Attributes whose values can be derived from other attributes or entities.
+
+6. Key Attribute: Attributes that uniquely identify an entity. These are typically Primary Keys.
+
+7. Null Attribute: Attributes that may not always have a value.
+	Example: A Middle Name attribute may be null for some people.
