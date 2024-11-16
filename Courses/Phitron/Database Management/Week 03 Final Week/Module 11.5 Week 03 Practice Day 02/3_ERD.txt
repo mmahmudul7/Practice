@@ -1,0 +1,21 @@
++-------------+           +------------+           +------------+
+|   Students  |           |   Classes  |           |  Teachers  |
++-------------+           +------------+           +------------+
+| StudentID   |----+  +---| ClassID    |---+   +---| TeacherID  |
+| Name        |    |  |   | ClassName  |   |   |   | Name       |
+| ClassID     |    |  |   | TeacherID  |   |   |   | Subject    |
+| DateOfBirth |    |  |   +------------+   |   |   | Email      |
+| Address     |    |  +--------------------+   +---+------------+
++-------------+    |
+                   |
+                   |
+                   v
+           +----------------+
+           |   Attendance   |
+           +----------------+
+           | AttendanceID   |
+           | StudentID      |
+           | ClassID        |
+           | AttendanceDate |
+           | Status         |
+           +----------------+
