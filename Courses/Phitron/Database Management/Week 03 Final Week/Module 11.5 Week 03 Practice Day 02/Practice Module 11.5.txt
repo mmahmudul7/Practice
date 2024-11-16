@@ -1,0 +1,4 @@
+﻿Questions
+1. What are the types of Entity Attribute?
+2. What is the main difference between executing SQL Query using python and executing SQL query in MySQL Workbench?
+3. Make an ERD of School Attendance System and also write SQL Schema
