@@ -15,12 +15,13 @@ Write a Program to take integer input from user and display the grade according 
 Marks				Grade
 -----				-----
 > 90				  A
->80 and <=90			  B
->=60 and <=80			  C
+>80 and <=90          B
+>=60 and <=80	      C
 below 60			  D
 
 Problem 5:
 Write a Program to check whether a year is leap year or not. Take input from User. if year = 1996, it is a leap year
 Conditions for leper:
 
-1. 
+    1. If a year is divisible by both 400 and 100 it is a leap year
+    2. If a year is divisible by 4 and not divisible by 100 it is a leap year
