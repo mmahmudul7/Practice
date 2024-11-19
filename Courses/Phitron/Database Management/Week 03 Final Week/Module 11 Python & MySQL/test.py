@@ -6,4 +6,5 @@ myDbConnection = mysql.connector.connect(
     passwd = "password"
 )
 
-print(mydb)
+print(myDbConnection)
+print("Connected!")
