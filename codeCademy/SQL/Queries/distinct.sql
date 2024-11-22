@@ -1,0 +1,5 @@
+SELECT DISTINCT genre 
+FROM movies;
+
+SELECT DISTINCT year 
+FROM movies;
