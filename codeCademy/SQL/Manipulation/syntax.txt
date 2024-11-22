@@ -1,0 +1,6 @@
+Most common data types:
+
+INTEGER, a positive or negative whole number
+TEXT, a text string
+DATE, the date formatted as YYYY-MM-DD
+REAL, a decimal value
