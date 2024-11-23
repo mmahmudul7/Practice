@@ -1,0 +1,3 @@
+In order to efficiently store data, we often spread related information across multiple tables.
+
+For instance, imagine that we’re running a magazine company where users can have different types of subscriptions to different products. Different subscriptions might have many different properties. Each customer would also have lots of associated information.
