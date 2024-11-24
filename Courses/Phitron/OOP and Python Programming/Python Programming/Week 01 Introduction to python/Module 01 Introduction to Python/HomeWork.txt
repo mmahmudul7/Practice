@@ -1,0 +1,17 @@
+1. Google search
+	a. Convert number to string: str
+	b. Convert decimal number: float
+	c. Python int VS float
+
+2. Google search: Python Operators
+
+3. Find array index using for loop in python.
+
+4. Take 3 numbers from the user and give me the largest number as output
+
+5. Take 3 numbers from the user and give me the sum of the numbers
+
+6. Run a loop and show the odd numbers between 39 to 68
+
+7. Grade calculator in python (if elif else)
+
