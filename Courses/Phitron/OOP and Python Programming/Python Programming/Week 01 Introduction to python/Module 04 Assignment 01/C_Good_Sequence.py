@@ -1,8 +1,8 @@
 n = int(input())
-n = [int(i) for i in input().split(" ")]
+ar = [int(i) for i in input().split(" ")]
 
 nums = {}
-for num in n:
+for num in ar:
     if(num not in nums):
         nums[num] = 0
     nums[num] += 1
