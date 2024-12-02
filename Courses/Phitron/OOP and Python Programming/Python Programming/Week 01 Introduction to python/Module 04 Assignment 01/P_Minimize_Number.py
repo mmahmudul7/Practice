@@ -2,7 +2,7 @@ n = input()
 ar = [int(i) for i in input().split(" ")]
 
 flag = True
-count = 0
+cnt = 0
 
 while flag is True:
     for i, number in enumerate(ar):
@@ -11,5 +11,5 @@ while flag is True:
             break
         else:
             ar[i] /= 2
-    if flag: count += 1
-print(count)
+    if flag: cnt += 1
+print(cnt)
