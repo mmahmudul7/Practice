@@ -47,7 +47,8 @@ class Restaurent:
 
 
 class Menu:
-    self.items = [] # Database of items
+    def __init__(self):
+        self.items = [] # Database of items
 
     def add_menu_item(self, item):
         self.items.append(item)
