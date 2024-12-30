@@ -71,6 +71,6 @@ const student = {
 console.log(student.subjects.math); // Output: 95
 console.log();
 
-console.log(Object.keys(person)); // Output: [ 'name', 'address' ]
-console.log(Object.values(person)); // Output: [ 'Hasan', 'Dhaka' ]
-console.log(Object.entries(person)); // Output: [ ['name', 'Hasan'], ['address', 'Dhaka'] ]
+console.log(Object.keys(person));
+console.log(Object.values(person)); 
+console.log(Object.entries(person)); 
