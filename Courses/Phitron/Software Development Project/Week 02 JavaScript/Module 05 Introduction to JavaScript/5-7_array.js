@@ -83,3 +83,5 @@ console.log(nestedArray[1][1]); // Output: 4
 
 // তৃতীয় অ্যারের প্রথম উপাদান
 console.log(nestedArray[2][0]); // Output: 5
+
+
