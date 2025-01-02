@@ -11,7 +11,7 @@ const checkBigName = (array) => {
     return name;
 };
 
-const friends = ["Mahmud", "Hasan", "Shamim", "Kader Khan", "Milton Alii"];
+const friends = ["Mahmud", "Hasan", "Shamim", "Kader Khan", "Milton Ali"];
 
 const biggestName = checkBigName(friends);
 console.log(biggestName);
