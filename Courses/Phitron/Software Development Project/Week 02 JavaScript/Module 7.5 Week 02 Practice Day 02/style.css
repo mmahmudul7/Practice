@@ -1,0 +1,57 @@
+.container {
+    padding-bottom: 20px;
+    min-height: 100vh;
+}
+
+#mealDetails {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.input-group {
+    border: 2px solid #FF6349;
+    box-shadow: 4px 4px 8px gray;
+    border-radius: 10px;
+}
+
+.form-control {
+    border-radius: 10px;
+}
+
+button {
+    background-color: #FF6349;
+    color: white;
+    border-radius: 10px;
+    border: none;
+}
+
+#errorMessage {
+    text-align: center;
+    display: none;
+    margin-bottom: 20px;
+}
+
+#mealList {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    box-shadow: 4px 4px 8px gray;
+    border-radius: 10px;
+}
+
+.card-text {
+    color: #D510CA;
+}
+
+img {
+    border-radius: 10px;
+}
+
+.singleItem {
+    cursor: pointer;
+}
