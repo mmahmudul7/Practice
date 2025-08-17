@@ -1,0 +1,8 @@
+-- 4. Show the list of employee name and corresponding manager names.
+
+SELECT * FROM EMPLOYEES;
+
+SELECT e.FIRST_NAME AS EMPLOYEE_NAME, m.FIRST_NAME AS MANAGER_NAME
+FROM EMPLOYEES AS e
+	JOIN EMPLOYEES AS m
+		ON e.MANAGER_ID = m.EMPLOYEE_ID;

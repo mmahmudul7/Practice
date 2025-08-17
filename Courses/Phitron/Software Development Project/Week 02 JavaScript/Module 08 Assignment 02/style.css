@@ -1,0 +1,52 @@
+form {
+    margin-left: 170px;
+}
+
+#searchBtn {
+    border: 1px solid orange;
+}
+
+.cart {
+    margin-left: 15px;
+    word-spacing: 7px;
+}
+
+#drinkCards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+.card-body {
+    padding: 16px;
+}
+
+.btn {
+    margin-top: 8px;
+}
+
+.btn:disabled {
+    background-color: #ddd;
+}
+
+.list-group-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.list-group-item img {
+    border-radius: 50%;
+    margin-right: 8px;
+}

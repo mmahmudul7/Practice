@@ -1,0 +1,7 @@
+Practice Day 1 Github Repo Link: https://github.com/mmahmudul7/JavaScript-Problem-Solve
+
+Practice Day 2 Github Repo Link: https://github.com/mmahmudul7/The-Meal-Finder
+Practice Day 2 Live Link: https://mmahmudul7.github.io/The-Meal-Finder/
+
+Assignment 02 Github Repo Link: https://github.com/mmahmudul7/Drink-Finder
+Assignment 02 Live Link: https://mmahmudul7.github.io/Drink-Finder/
