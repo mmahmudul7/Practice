@@ -4,9 +4,26 @@ function sum(a, b) {
 }
 console.log(sum(5, 3)); // 8
 
+// Function Expression
+const multiply = function (x, y) {
+  return x * y;
+};
+console.log(multiply(4, 5));
+
 // Arrow Function (ES6)
+const divide = (a, b) => a / b;
+console.log(divide(10, 2));
+
 const greetPerson = (name) => `Hello ${name}`;
 console.log(greetPerson("Hasan")); // Hello Hasan
+
+// Default Parameters
+function greet(name = "Guest") {
+  return `Welcome, ${name}`;
+}
+
+console.log(greet()); // Welcome, Guest
+console.log(greet("Hasan")); // Welcome, Hasan
 
 // ====================
 // 1. Sum function
