@@ -33,9 +33,9 @@ const person = {
   city: "Rajshahi",
 };
 
-const {name: firstName, age: old, city: vanue, country = "BD"} = person;
+const {name: firstName, age: old, city: venue, country = "BD"} = person;
 
 console.log("Name:", firstName); // Mahmud
 console.log("Age:", old); // 25
-console.log("City:", vanue); // Rajshahi
+console.log("City:", venue); // Rajshahi
 console.log("Country:", country); // BD (default value)
