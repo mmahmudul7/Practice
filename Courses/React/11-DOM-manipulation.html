@@ -55,3 +55,60 @@
     </script>
   </body>
 </html>
+
+<!-- 
+// Elements Select করা
+// ID দিয়ে select
+const title = document.getElementById("title");
+
+// Class দিয়ে select
+const items = document.getElementsByClassName("item");
+
+// Tag দিয়ে select
+const paragraphs = document.getElementsByTagName("p");
+
+// Modern way → querySelector
+const firstItem = document.querySelector(".item");
+const allItems = document.querySelectorAll(".item");
+
+
+// Text & Style পরিবর্তন করা
+const heading = document.getElementById("title");
+
+// Text পরিবর্তন
+heading.textContent = "Hello, DOM!";
+
+// Style পরিবর্তন
+heading.style.color = "blue";
+heading.style.fontSize = "30px";
+
+
+// Event Listener (Button এ কাজ করা)
+// html
+<button id="btn">Click Me</button>
+<p id="msg"></p>
+
+// js
+const button = document.getElementById("btn");
+const msg = document.getElementById("msg");
+
+button.addEventListener("click", () => {
+  msg.textContent = "Button Clicked!";
+  msg.style.color = "green";
+});
+
+// নতুন Element বানানো & যোগ করা
+const list = document.getElementById("list");
+
+// নতুন element বানানো
+const newItem = document.createElement("li");
+newItem.textContent = "New Item";
+
+// লিস্টে যোগ করা
+list.appendChild(newItem);
+
+// Element Remove করা
+const firstItem = document.querySelector("li");
+firstItem.remove();
+
+-->
