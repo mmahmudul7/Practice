@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Practice</title>
+  </head>
+  <body>
+    <h1 id="title">Welcome to DOM</h1>
+
+    <!-- Button to change text -->
+    <button id="btn">Click Me</button>
+    <p id="msg"></p>
+
+    <!-- List Example -->
+    <ul id="list">
+      <li>Item 1</li>
+      <li>Item 2</li>
+    </ul>
+    <button id="add">Add Item</button>
+
+    <!-- Paragraph Example -->
+    <p id="para">Double click me!</p>
+
+    <script>
+      // Changing text & style
+      const heading = document.getElementById("title");
+      heading.style.color = "blue";
+
+      // Event Listener for button
+      const button = document.getElementById("btn");
+      const msg = document.getElementById("msg");
+
+      button.addEventListener("click", () => {
+        msg.textContent = "Button Clicked!";
+        msg.style.color = "green";
+      });
+
+      // Add new item in list
+      const list = document.getElementById("list");
+      const addBtn = document.getElementById("add");
+
+      addBtn.addEventListener("click", () => {
+        const newItem = document.createElement("li");
+        newItem.textContent = "New Item";
+        list.appendChild(newItem);
+      });
+
+      // Double click event
+      const para = document.getElementById("para");
+      para.addEventListener("dblclick", () => {
+        para.textContent = "Text Changed!";
+        para.style.color = "red";
+      });
+    </script>
+  </body>
+</html>
