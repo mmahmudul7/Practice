@@ -1,0 +1,87 @@
+1. React Component (Functional Component)
+React-এ সবকিছু Component দিয়ে গঠিত হয়।
+
+function Welcome() {
+  return <h1>Hello Hasan!</h1>;
+}
+
+export default Welcome;
+
+
+2. Props (Properties)
+Props হলো data যেটা component-এ পাঠানো হয়।
+এগুলো read-only।
+
+function Greeting(props) {
+  return <h2>Hello {props.name}!</h2>;
+}
+
+function App() {
+  return (
+    <div>
+      <Greeting name="Hasan" />
+      <Greeting name="Mahmud" />
+    </div>
+  );
+}
+
+export default App;
+
+3. State (Dynamic Data)
+State হলো variable যেটা UI এর সাথে change হয়।
+
+import { useState } from "react";
+
+function Counter() {
+  const [count, setCount] = useState(0);
+
+  return (
+    <div>
+      <h2>Count: {count}</h2>
+      <button onClick={() => setCount(count + 1)}>➕ Increase</button>
+      <button onClick={() => setCount(count - 1)}>➖ Decrease</button>
+    </div>
+  );
+}
+
+export default Counter;
+
+এখানে useState দিয়ে আমরা state বানালাম।
+Button চাপলে count বাড়বে বা কমবে।
+
+4. Event Handling
+React-এ event handle করতে camelCase ব্যবহার হয়।
+
+function ButtonClick() {
+  function handleClick() {
+    alert("Button Clicked!");
+  }
+
+  return <button onClick={handleClick}>Click Me</button>;
+}
+
+export default ButtonClick;
+
+
+5. Combine Everything (Mini Example)
+
+import { useState } from "react";
+
+function App() {
+  const [name, setName] = useState("Hasan");
+
+  function changeName() {
+    setName("Mahmud");
+  }
+
+  return (
+    <div>
+      <h1>Hello, {name} 👋</h1>
+      <button onClick={changeName}>Change Name</button>
+    </div>
+  );
+}
+
+export default App;
+
+এখানে প্রথমে নাম Hasan থাকবে, button চাপলে নাম Mahmud হয়ে যাবে।
