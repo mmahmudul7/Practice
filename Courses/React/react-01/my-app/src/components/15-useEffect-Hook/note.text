@@ -1,0 +1,17 @@
+useEffect holo Side-effect ja data fetch, DOM change, timer/interval chalano etc handle kore
+
+// useEffect আসলে কী?
+
+React এর component render হলে আমরা মাঝে মাঝে কিছু extra কাজ করতে চাই—
+যেমনঃ
+
+Console এ log দেওয়া
+
+API থেকে ডেটা আনা
+
+setInterval/setTimeout চালানো
+
+DOM এর বাইরে কিছু update করা
+
+👉 এই extra কাজগুলোকেই বলা হয় Side Effect।
+useEffect হলো সেই side effect handle করার hook।

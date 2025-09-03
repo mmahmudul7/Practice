@@ -1,17 +1,19 @@
-import Greeting from "./components/14-react-basics/Greeting";
-import CounterApp from "./components/14-react-basics/CounterApp";
-import NameChangerApp from "./components/14-react-basics/NameChangerApp";
-import ToggleMessageApp from "./components/14-react-basics/ToggleMessageApp";
-import LiveInput from "./components/14-react-basics/LiveInput";
+import WithoutDependency from "./components/15-useEffect-Hook/1-withoutDependency";
+import EmptyDependencyArray from "./components/15-useEffect-Hook/2-EmptyDependencyArray";
+import WithDependencyArray from "./components/15-useEffect-Hook/3-WithDependencyArray";
+import ApiData from "./components/15-useEffect-Hook/ApiData";
+import EffectTest from "./components/15-useEffect-Hook/EffectTest";
+import ToggleTimer from "./components/15-useEffect-Hook/ToggleTimer";
 
 function App() {
   return (
     <div>
-      <CounterApp />
-      <Greeting />
-      <NameChangerApp />
-      <ToggleMessageApp />
-      <LiveInput />
+      <WithoutDependency />
+      <EmptyDependencyArray />
+      <WithDependencyArray />
+      <ToggleTimer />
+      <ApiData />
+      <EffectTest />
     </div>
   );
 }
