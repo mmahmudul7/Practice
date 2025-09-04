@@ -1,17 +1,14 @@
 import "./App.css";
-
-import Condition from "./components/16-conditional-Rendering/Condition";
-import Notification from "./components/16-conditional-Rendering/Notification";
-import ProductList from "./components/16-conditional-Rendering/ProductList";
-import TernaryOperator from "./components/16-conditional-Rendering/TernaryOperator";
+import NameList from "./components/16-list-keys/NameListIndex";
+import ProductList from "./components/16-list-keys/ProductList";
+import UserList from "./components/16-list-keys/UserListID";
 
 function App() {
   return (
     <div>
-      <Condition />
-      <TernaryOperator />
-      <Notification />
       <ProductList />
+      <UserList />
+      <NameList />
     </div>
   );
 }
