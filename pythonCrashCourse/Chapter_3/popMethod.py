@@ -8,13 +8,13 @@ print(popped_motorcycle)
 # another script
 motorcyclesI_Owned = ["honda", "yahama", "suzuki"]
 
-last_owned = motorcyclesI_Owned.pop()
+last_owned = motorcyclesI_Owned.pop() # suzuki
 print(f"\nThe last motorcycle I owned was a {last_owned.title()}")
 
 # another script
 motorcyclesI_Owned = ["honda", "yahama", "suzuki"]
 
-first_owned = motorcyclesI_Owned.pop(0)
+first_owned = motorcyclesI_Owned.pop(0) # honda
 print(f"\nThe last motorcycle I owned was a {first_owned.title()}\n")
 
 print(motorcyclesI_Owned)

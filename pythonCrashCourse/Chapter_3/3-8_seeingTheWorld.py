@@ -1,15 +1,16 @@
-locations = ["dhaka", "rajshahi", "kazla", "zero point", "binodpur bazar"]
-print(locations)
-print(sorted(locations))
-print(locations)
+locations = ['dhaka', 'rajshahi', 'kazla', 'zero point', 'binodpur bazar']
+
+print(locations) # ['dhaka', 'rajshahi', 'kazla', 'zero point', 'binodpur bazar']
+print(sorted(locations)) # ['binodpur bazar', 'dhaka', 'kazla', 'rajshahi', 'zero point']
+print(locations) # ['dhaka', 'rajshahi', 'kazla', 'zero point', 'binodpur bazar']
 locations.reverse()
-print(locations)
+print(locations) # ['binodpur bazar', 'zero point', 'kazla', 'rajshahi', 'dhaka']
 locations.reverse()
-print(locations)
+print(locations) # ['dhaka', 'rajshahi', 'kazla', 'zero point', 'binodpur bazar']
 locations.reverse()
-print(locations)
+print(locations) # ['binodpur bazar', 'zero point', 'kazla', 'rajshahi', 'dhaka']
 
 locations.sort()
-print(locations)
+print(locations) # ['binodpur bazar', 'dhaka', 'kazla', 'rajshahi', 'zero point']
 locations.sort(reverse=True)
-print(locations)
+print(locations) # ['zero point', 'rajshahi', 'kazla', 'dhaka', 'binodpur bazar']

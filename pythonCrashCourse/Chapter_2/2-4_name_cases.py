@@ -6,3 +6,9 @@ uppercase = name.upper()
 print(uppercase)
 titlecase = name.title()
 print(titlecase)
+
+'''
+eric
+ERIC
+Eric
+'''
