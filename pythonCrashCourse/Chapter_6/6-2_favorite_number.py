@@ -7,6 +7,8 @@ favorite_number = {
 }
 
 print(f"Mahmud's favorite number is:" + str(favorite_number["mahmud"]))
+# + operator pirnt value agee space add kore na
+
 print(f"Hasan's favorite number is:", favorite_number["hasan"])
 print(f"Shamim's favorite number is:", favorite_number["shamim"])
 print(f"Ibrahim's favorite number is:", favorite_number["ibrahim"])

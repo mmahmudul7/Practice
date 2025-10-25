@@ -6,22 +6,22 @@ glossary = {
     'dictionary': "A collection of key-value pairs.",
 }
 
-for word, value in glossary.items():
-    print(f"\n{word.title()}: {value}")
+for word, value in glossary.items(): # key, value
+    print(f"{word.title()}: {value}")
 #########
 print()
 word = 'string'
-print("\n" + word.title() + ": " + glossary[word])
+print(word.title() + ": " + glossary[word])
 
 word = 'comment'
-print("\n" + word.title() + ": " + glossary[word])
+print(word.title() + ": " + glossary[word])
 
 word = 'list'
-print("\n" + word.title() + ": " + glossary[word])
+print(word.title() + ": " + glossary[word])
 
 word = 'loop'
-print("\n" + word.title() + ": " + glossary[word])
+print(word.title() + ": " + glossary[word])
 
 word = 'dictionary'
-print("\n" + word.title() + ": " + glossary[word])
+print(word.title() + ": " + glossary[word])
 ###########

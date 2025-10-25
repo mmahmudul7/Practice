@@ -4,7 +4,6 @@ favorite_laguages = {
     "edward" : "rust",
     "phil" : "python",
 }
-
 for name, language in favorite_laguages.items():
     print(f"{name.title()}'s favorite language is {language.title()}.")
 print()

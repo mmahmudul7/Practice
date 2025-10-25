@@ -1,5 +1,5 @@
 alien_0 = {"x_position" : 0, "y_position" : 25, "speed" : "medium"}
-print(f"Original position: {alien_0['x_position']}")
+print(f"Original position: {alien_0['x_position']}") # Original position: 0
 # Move the alien to the right.
 # Determine how far to move the alien based on its current speed
 if alien_0["speed"] == "slow":
@@ -13,10 +13,12 @@ else:
 # The new postions is the old position plus the increment.
 alien_0["x_position"] = alien_0["x_position"] + x_increment
 
-print(f"New position: {alien_0['x_position']}")
+print(f"New position: {alien_0['x_position']}") # New position: 2
 ##Removing Key-Value Pairs
 
+
+############
 alien_0 = {"color" : "green", "points" : 5}
-print(alien_0)
+print(alien_0) # {'color': 'green', 'points': 5}
 del alien_0["points"]
-print(alien_0)
+print(alien_0) # {'color': 'green'}

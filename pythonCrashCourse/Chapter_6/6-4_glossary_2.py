@@ -11,5 +11,6 @@ glossary = {
     "boolean expression": "An expression that evaluates to True or False.",
 }
 
+print()
 for key, value in glossary.items():
-    print(f"\n{key.title()}: {value}")
+    print(f"{key.title()}: {value}")

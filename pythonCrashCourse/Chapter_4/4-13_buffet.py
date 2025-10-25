@@ -1,3 +1,4 @@
+# Tuple 
 foods = ("rice", "chicken", "water", "dal", "wheat")
 
 for food in foods:
