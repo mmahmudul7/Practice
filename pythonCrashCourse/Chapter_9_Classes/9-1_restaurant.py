@@ -19,7 +19,7 @@ class Restaurant:
     def open_restaurant(self):
         print(f"{self.restaurant_name} restaurent is open!")
 
-restaurant = Restaurant("Master Cef", "Chienese")
+restaurant = Restaurant("Master Chef", "Chienese")
 
 print(f"{restaurant.restaurant_name} is one of the best hotel in Rajshahi")
 print(f"They offering {restaurant.cuisine_type} foods.")

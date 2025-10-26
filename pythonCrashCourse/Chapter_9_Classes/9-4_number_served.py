@@ -30,7 +30,7 @@ class Restaurant:
         """Allow user to increment the number of customers served."""
         self.number_served += additional_served
 
-restaurant = Restaurant("Master Cef", "Chienese")
+restaurant = Restaurant("Master Chef", "Chienese")
 
 print("\nNumber served: " + str(restaurant.number_served))
 restaurant.number_served = 430
