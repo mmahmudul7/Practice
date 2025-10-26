@@ -1,13 +1,13 @@
 name_prompt = "\nWhat's your name? "
 place_prompt = "If you could visit one place in the world, where would it be? "
 continue_prompt = "\nWould you like to let someone else respond? (yes/no) "
-responses = {}
+responses = {} # A Dictionary
 # Responses will be stored in the form {name: place}.
 while True:
-    name = input(name_prompt)
-    place = input(place_prompt)
+    name = input(name_prompt) # key
+    place = input(place_prompt) # value
 
-    responses[name] = place
+    responses[name] = place # storing ...
 
     repeat = input(continue_prompt)
     if repeat != "yes":

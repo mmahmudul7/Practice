@@ -1,4 +1,4 @@
-def city_country(city, country):
+def city_country(city, country):  # Function with return
     input = f"{city}, {country}"
     return input.title()
 
