@@ -1,19 +1,21 @@
 '''
 1. Define a class named Library with one class attribute named book_list. Initially, it should be an empty list. Create a class method entry_book() to insert an object of the Book class into book_list.
 '''
-
 class Library:
-    book_list = []
+    def __init__(self):
+        self.book_list = []
 
-    def entry_book(self, entry, book):
-        entry.book_list.append(book)
+    def entry_book(self, book):
+        """Add a Book object to the list"""
+        self.book_list.append(book)
 
-    def view_all_book(entry):
-        if not entry.book_list:
-            print('No books in library')
+    def view_all_books(self):
+        """Display all books in the library"""
+        if not self.book_list:
+            print("No books in the library.")
         else:
-            print('All books in library:')
-            for book in entry.book_list:
+            print("\nAll books in library:")
+            for book in self.book_list:
                 book.view_book_info()
 
 '''
@@ -23,22 +25,21 @@ class Library:
 - author: Author of the book.
 - availability: A boolean indicating if the book is available for borrowing or not.
 '''
-
 class Book:
-    def __init__(self, book_id, title, author, availability = True):
-        '''
-        9. Make the attributes (such as book_id, title, author, availability) as protected/private as possible using Python’s class mechanisms. This will ensure that these attributes cannot be accessed directly outside the class.
-        '''
+    '''
+    9. Make the attributes (such as book_id, title, author, availability) as protected/private as possible using Python’s class mechanisms. This will ensure that these attributes cannot be accessed directly outside the class.
+    '''
+    def __init__(self, book_id, title, author, library):
         self.__book_id = book_id
         self.__title = title
         self.__author = author
-        self.__availability = availability
+        self.__availability = True
+
+        library.entry_book(self)
 
     '''
     3. In the constructor of the Book class, initialize the attributes. Insert the Book object into book_list using the method entry_book(). This part will be done manually, i.e., no need for a menu option.
     '''
-
-    Library.entry_book()
 
     def get_book_id(self):
         return self.__book_id
@@ -55,40 +56,30 @@ class Book:
     '''
     4. Add a method borrow_book() in the Book class that checks if the book is available for borrowing (i.e., the book’s availability is True). If so, change the availability to False.
     '''
-
     def borrow_book(self):
         if self.__availability:
             self.__availability = False
-            print(f'Book {self.__title} borrowed')
+            print(f"{self.__title} has been borrowed.")
         else:
-            print(f'{self.__title} is not availabile')
+            print(f"{self.__title} is already borrowed.")
 
     '''
     5. Add a method return_book() in the Book class that changes the availability of the book back to True when a book is returned.
     '''
-
     def return_book(self):
         if not self.__availability:
             self.__availability = True
-            print(f'{self.__title} is avaliable')
+            print(f"{self.__title} has been returned.")
         else:
-            print(f'{self.__title} is already avaliable')
+            print(f"{self.__title} is already available.")
 
     '''
     6. Add a method view_book_info() in the Book class to display the details of the book, including its book_id, title, author, and availability status.
     '''
-
     def view_book_info(self):
-        if self.__availability:
-            status = 'Available'
-        else:
-            status = 'Not Available'
+        status = "Available" if self.__availability else "Not Available"
+        print(f"ID: {self.__book_id} | Title: {self.__title} | Author: {self.__author} | Status: {status}")
 
-        print(f'Book ID: {self.book_id}')
-        print(f'Title: {self.title}')
-        print(f'Author: {self.author}')
-        print(f'Status: {status}')
-        print()
 
 '''
 7. Create a menu-driven system with the following options:
@@ -99,10 +90,9 @@ class Book:
 Handle the user’s choice using input prompts.
 '''
 
-def menu():
+def menu(library, all_books):
     while True:
-        print()
-        print("Library Menu:")
+        print("\nLibrary Menu:")
         print("1. View All Books")
         print("2. Borrow Book")
         print("3. Return Book")
@@ -117,60 +107,38 @@ def menu():
         '''
 
         if choice == '1':
-            Library.view_all_books()
+            library.view_all_books()
 
         elif choice == '2':
-            while True:
-                try:
-                    book_id = int(input("Enter the Book ID to borrow: "))
-                    book = None
-
-                    for b in Library.book_list:
-                        if b.get_book_id() == book_id:
-                            book = b
-                            break
-
-                    if not book:
-                        print("Invalid Book ID.")
-                    else:
-                        book.borrow_book()
-
-                    break
-                except ValueError as e:
-                    print(f"Error {e}")
-                    continue
+            book_id = input("Enter Book ID to borrow: ")
+            book = next((b for b in all_books if b.get_book_id() == book_id), None)
+            if book:
+                book.borrow_book()
+            else:
+                print("Invalid Book ID.")
 
         elif choice == '3':
-            while True:
-                try:
-                    book_id = int(input("Enter the Book ID to return: "))
-                    book = None
-
-                    for b in Library.book_list:
-                        if b.get_book_id() == book_id:
-                            book = b
-                            break
-
-                    if not book:
-                        print("Invalid Book ID.")
-                    else:
-                        book.return_book()
-
-                    break
-                except ValueError as e:
-                    print(f"Error {e}")
-                    continue
+            book_id = input("Enter Book ID to return: ")
+            book = next((b for b in all_books if b.get_book_id() == book_id), None)
+            if book:
+                book.return_book()
+            else:
+                print("Invalid Book ID.")
 
         elif choice == '4':
-            print("Exit!")
+            print("Exiting the system. Goodbye!")
             break
 
         else:
             print("Invalid choice. Try again.")
 
-Book('101', 'Python Programming', 'Mahmudul Hasan')
-Book('102', 'Data Structures', 'Hasan Shamim')
-Book('103', 'Algorithms Made Easy', 'Kader Khan')
-Book('104', 'MySQL', 'Hasib Naseer')
 
-menu()
+my_library = Library()
+all_books = []
+
+all_books.append(Book('101', 'Python Programming', 'Mahmudul Hasan', my_library))
+all_books.append(Book('102', 'Data Structures', 'Hasan Shamim', my_library))
+all_books.append(Book('103', 'Algorithms Made Easy', 'Kader Khan', my_library))
+all_books.append(Book('104', 'MySQL Basics', 'Hasib Naseer', my_library))
+
+menu(my_library, all_books)
