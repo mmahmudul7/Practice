@@ -10,7 +10,8 @@ contents = path.read_text()
 lines = contents.splitlines()
 
 pi_string = ''
-for line in lines:
+# for line in lines:
+for line in contents.splitlines():
     # pi_string += line
     pi_string += line.lstrip() # remove left side whitespaces
 
