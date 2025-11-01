@@ -20,7 +20,7 @@ def get_new_username(path):
 
 def greet_user():
     """Greet the user by name."""
-    path = Path('usernae.json')
+    path = Path('username.json')
     username = get_stored_username(path)
     if username:
         print(f"Welcome back, {username}")    
