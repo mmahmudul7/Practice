@@ -1,4 +1,4 @@
-# Refactoring
+# Refactoring / clear code / easy to maintain and extend
 from pathlib import Path
 import json
 
@@ -11,16 +11,21 @@ def get_stored_username(path):
     else:
         return None
 
+def get_new_username(path):
+    """Prompt for a new username."""
+    username = input("What is your name?\n")
+    contents = json.dumps(username)
+    path.write_text(contents)
+    return username
+
 def greet_user():
     """Greet the user by name."""
-    path = Path('username.json')
+    path = Path('usernae.json')
     username = get_stored_username(path)
     if username:
         print(f"Welcome back, {username}")    
     else:
-        username = input("What is your name?\n")
-        contents = json.dumps(username)
-        path.write_text(contents)
+        username = get_new_username(path)        
         print(f"W'll remember you when you come back, {username}!")
 
 
