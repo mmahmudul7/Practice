@@ -20,7 +20,7 @@ class SidewayShooter:
         pygame.display.set_caption("Sideway Shooter")
 
         self.ship = Ship(self)
-        self.bullets = pygame.sprite.Group() # Firing multiple bullets
+        self.bullets = pygame.sprite.Group() # Firing multiple bullets 
 
     def run_game(self):
         """Start the main loop for the game."""
