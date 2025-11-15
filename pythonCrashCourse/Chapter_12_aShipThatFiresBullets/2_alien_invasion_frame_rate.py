@@ -1,4 +1,4 @@
-# Creating a Pygame window and Responding to User Input 
+# Controlling the Frame Rate
 import sys # for exit the game
 import pygame # contains the functionality to make games
 
@@ -7,6 +7,7 @@ class AlientInvasion:
     def __init__(self):
         """Initialize the game, and create game resources."""
         pygame.init() # 1--> background settings for Pygame
+        self.clock = pygame.time.Clock() # Make a Clock
         # Global varibale self.screen (surface)
         self.screen = pygame.display.set_mode((1280, 720)) # 2--> Display window. Surface in px
         pygame.display.set_caption("Alien Invasion")
@@ -21,6 +22,7 @@ class AlientInvasion:
 
             # Make the most recently draw screen visible 
             pygame.display.flip() # 6 most recently drawn screen visible
+            self.clock.tick(60) # Run exactly 60 times per second
 
 
 if __name__ == '__main__':
