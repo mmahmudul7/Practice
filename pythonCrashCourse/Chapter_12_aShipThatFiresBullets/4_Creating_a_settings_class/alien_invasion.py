@@ -2,6 +2,7 @@ import sys # for exit the game
 import pygame # contains the functionality to make games
 
 from settings import Settings
+from ship import Ship
 
 class AlientInvasion:
     """Overall class to manage game assets and behavior."""
@@ -13,7 +14,8 @@ class AlientInvasion:
        
         self.screen = pygame.display.set_mode((self.settings.screen_width, self.settings.screen_height)) # 2
         pygame.display.set_caption("Alien Invasion")
-        # self.bg_color = (230, 230, 230)
+
+        self.ship = Ship(self) # Ship access to the game's resources
 
     def run_game(self):
         """Start the main loop for the game."""
@@ -24,7 +26,8 @@ class AlientInvasion:
                     sys.exit()
 
             # Redraw the screen during each pass through the loop. 
-            self.screen.fill(self.settings.bg_color) # 3
+            self.screen.fill(self.settings.bg_color)
+            self.ship.blitme() # Calling blitme() function of Ship class / The ship appears on to of the background
 
             # Make the most recently draw screen visible 
             pygame.display.flip()
