@@ -1,4 +1,3 @@
-#Author name: Mahmudul Hasan
 #Date: 22/11/23
 #Des: This program will print 
 
