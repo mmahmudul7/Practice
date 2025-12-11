@@ -3,11 +3,11 @@ print(motorcycles)
 
 #Adding elements to a list
 motorcycles.append("ducati")
-print(motorcycles)
+print(motorcycles) # ['honda', 'yamaha', 'suzuki', 'ducati'] 
 
 #modify elements in a list
 motorcycles[0] = "ducati"
-print(motorcycles)
+print(motorcycles) # ['ducati', 'yamaha', 'suzuki', 'ducati']
 
 print(motorcycles[3])
 

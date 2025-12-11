@@ -1,12 +1,15 @@
 current_users = ["jaden", "admin", "hasan", "mahmud", "shamim"]
 new_users = ["faisal", "admin", "hasan", "arsidoo", "mmahmdul7"]
+
 for new_user in new_users:
     if new_user in current_users:
         print(f"You need to enter a new username! instead of {new_user}")
     else:
         print("Congratulations! Your username is available")
+
 #################
 print("\n\tCase insensitive")
+
 current_users = ["jaden", "Admin", "hasan", "mahmud", "shamim"]
 new_users = ["faisal", "admin", "Hasan", "arsidoo", "mmahmdul7"]
 
