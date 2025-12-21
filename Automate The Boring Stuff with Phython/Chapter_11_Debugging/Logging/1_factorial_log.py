@@ -6,6 +6,8 @@ logging.basicConfig(
     format='%(asctime)s - %(levelname)s - %(message)s'
 )
 
+# logging.disable(logging.CRITICAL) # for hiding log messages
+
 logging.debug('Start of program')
 
 
@@ -15,6 +17,7 @@ def factorial(n):
 
     for i in range(1, n + 1):
         total *= i
+        # print(f'{i} for total') # old system
         logging.debug('i is %s, total is %s', i, total)
 
     logging.debug('End of factorial(%s)', n)
